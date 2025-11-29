@@ -1,1 +1,1 @@
-# culinary-guide-to-popularity
+# The Culinary Guide to Popularity
