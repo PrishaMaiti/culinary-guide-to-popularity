@@ -9,11 +9,21 @@ In order to preprocess the data so that it was ready for analysis, I first had t
 <img width="847" height="164" alt="Screenshot 2025-12-09 at 12 01 23 PM" src="https://github.com/user-attachments/assets/fe6755da-4d11-4353-9daa-baa20d480926" />
 
 I conducted three univariate analyses to see the distirbution of three variables: average rating, number of steps, and number of ingredients. The latter two were variables I believed were useful to accurately predict a recipe's average rating, so I wanted to include them in my initial analysis. The plot below shows the distribution of the number of steps, which appear to have a moderately strong skew to the right, meaning that most recipes don't require as many steps as the average number of steps required to follow in these recipes.
-<img width="584" height="398" alt="Screenshot 2025-12-12 at 12 30 29 AM" src="https://github.com/user-attachments/assets/0542019b-1a07-446f-8a6e-a30c783889a7" />
+<iframe
+  src="assets/n_steps_dist.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 The plot below displays the relationship between average rating and number of steps. It looks like the bulk of average ratings fall between the range of 4-5, and also typically require no more than 40 steps.
-<img width="596" height="417" alt="Screenshot 2025-12-12 at 12 31 52 AM" src="https://github.com/user-attachments/assets/22b5d7d0-5846-4d5b-82e5-005dd7f7bbf5" />
+<iframe
+  src="assets/avg_rating_vs_n_steps.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 I created a pivot table to explore the average number of tags given the number of ingredients for each unique number of steps. This is a useful way to quickly explore how recipes with different numbers of ingredients and different numbers of steps may fall into more or less categories for what the food can be used for, whether it's a quick source of protein, or a large family size meal to take to potlucks!
