@@ -32,7 +32,12 @@ I created a pivot table to explore the average number of tags given the number o
 ## Assessment of Missingness
 
 I found out which columns in my dataset contained any missing values. There were three: name, description, and my aggregated column average_rating. `name` had just 1 missing value and `description` had 70 missing values. `average_rating` however, had 2609 missing values, which couldn't have been just a coincidence. So I decided to test whether the missingness of the `average_rating` column was not missing at random (NMAR), that is, whether the values in the column were missing because of the variable `average_rating` itself, or if the missingness depended on another variable. I decided to conduct a permutation tes to determine whether the missingness of `average_rating` depended on `n_steps`, the number of steps in a recipe. After doing the test, I got a p-value of close to 0. A **p-value** tells us the probability that we'd get results as extreme as the ones we observed due to random chance. Typically, a common threshold is 0.05, so when our p-value is < 0.05, we reject the null hypothesis, which is that the missing `average_rating` values are NMAR, or don't depend on any other variable. That means we have sufficient evidence in favor of our alternative hypothesis, which is that the data is missing at random (MAR), or that it depends on `n_steps`.
-TODO: Plotly plot coming here soon!
+<iframe
+  src="assets/perm_dist_missingness.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ## Hypothesis Testing
 
